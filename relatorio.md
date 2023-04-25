@@ -5,7 +5,7 @@ TODO
 # Requisitos
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
-- [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF02 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
@@ -66,7 +66,7 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF02 - Configurações de Perfil
+## RF02 - Editar Configurações de Perfil
 ###  Atributos
 
 |Item|Descrição|

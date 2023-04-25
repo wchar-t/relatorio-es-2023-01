@@ -9,6 +9,8 @@ TODO
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [ ] RF17 - Receber pontos ao assistir transmissões ao vivo [Anderson Freitas](https://github.com/freitasanderson)
+
 
 # Casos de uso e User stories
 
@@ -279,5 +281,60 @@ TODO
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Eu como usuário quero vincular minha conta na plataforma com minha conta em outro serviço, assim eu posso utilizar minhas preferências e também terei mais segurança na minha conta|Todas as opções de configurações de perfil devem estar funcionando perfeitamente, assim como o serviço ao qual o usuário deseja vincular sua conta. O usuário poderá vincular sua conta na página de configuração de perfil ao serviço que estiver disponível e desejar |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+## RF17 - Receber pontos ao assistir transmissões ao vivo
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso| Receber pontos ao assistir|
+|Resumo| Usuário recebe pontos conforme assiste uma transmissão ao vivo|
+|Ator principal| Usuário logado|
+|Ator secundário||
+|Pré-condição|O usuário deve estar logado em sua conta e estar assistindo uma transmissão ao vivo|
+|Pós-condição|O usuário receberá pontos que posteriormente podem ser trocados|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário logado acessa uma transmissão ao vivo|
+|Passo 2|Conforme a transmissão selecionada estiver sendo reproduzida e não minimizada o usuário recebe pontos|
+|Passo 3|O sistema contabiliza esses pontos e o adiciona ao saldo do usuário logado|
+|Passo 4|Posteriormente o usuário poderá resgatar esses pontos em troca de benefícios ou prêmios|
+
+
+
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário não estiver logado ou estiver com alguma restrição, será alertado que não está elegível para receber pontos|
+|Passo 2|Se o usuário não estiver logado, ele poderá efetuar login. Se for algum problema no sistema, ele poderá entrar em contato com a equipe de suporte ao cliente para obter ajuda|
+
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Nenhum|Não|Não|Nenhum|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Receber Pontos|O usuário recebe pontos|
+|Resgatar Pontos|O usuário pode resgatar os seus pontos|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Eu como usuário quero assistir uma transmissão ao vivo e receber pontos que posso utilizar para resgatar prêmios ou benefícios na plataforma|Todas os pontos devem ser contabilizados corretamente (quando elegível) ao assistir a transmissão e devem poder serem resgatados conforme desejar alguma das opções de resgate disponíveis|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)

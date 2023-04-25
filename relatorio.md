@@ -6,6 +6,7 @@ TODO
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber pontos ao assistir transmissões ao vivo [Anderson Freitas](https://github.com/freitasanderson)
@@ -83,8 +84,9 @@ TODO
 | -- | - |
 |Passo 1|O usuário acessa sua conta e clica em "Configurações de perfil"|
 |Passo 2|O usuário é redirecionado para a página em que pode promover as atualizações de imagem de perfil, nome, descrição e outras configurações de visibilidade e segurança|
-|Passo 3|O sistema faz as devidas validações|
-|Passo 4|Em caso de  sucesso, o usuário poderá verificar se as alterações foram aplicadas visualizando seu perfil|
+|Passo 3|Usuário as atualiza de imagem de perfil, nome e/ou descrição|
+|Passo 4|O sistema faz as devidas validações|
+|Passo 5|Em caso de  sucesso, o usuário poderá verificar se as alterações foram aplicadas visualizando seu perfil|
 
 ###  Fluxo alternativo
 
@@ -100,11 +102,6 @@ TODO
 |Foto|Sim|Sim|Imagem|
 |Nome|Sim|Sim|Texto|
 |Descrição|Sim|Sim|Texto|
-|Email|Sim|Sim|Texto|
-|Senha|Sim|Sim|Texto|
-|Notificações|Sim|Sim|Lista de itens|
-|Visibilidade|Sim|Sim|Checkbox|
-
 
 ###  Opções de usuário
 
@@ -113,19 +110,78 @@ TODO
 |Foto de Perfil?|Define/Altera a foto de perfil do usuário|
 |Nome?|Define/Altera o apelido do usuário|
 |Descrição?|Define/Altera a descrição do usuário|
-|email?|Define/Altera a email do usuário|
-|senha?|Define/Altera a email do usuário|
-|notificações?|Define a maneira que o usuário quer lidar com as notificações (não exibir, silenciar por X horas/dias)|
-|visibilidade?|Define/Altera a visibilidade do usuário (privado/público)|
 |Salvar|Ao clicar, as informações são atualizados|
 
 ###  User Story
 
 |User Story|Critério de Avaliação|
 | -- | --- |
-|Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Também quero poder configurar minhas preferências de notificação e privacidade para controlar o tipo de informação que compartilho com outros usuários e quais notificações recebo. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| Todas as opções de configurações de perfil e preferências de notificação e privacidade estão disponíveis e funcionando corretamente. O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
+|Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF05 - Recuperar senha do usuário
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Recuperar senha|
+|Resumo|Painel para recuperação de senha do perfil|
+|Ator principal|Usuário cadastrado|
+|Ator secundário| Não possui |
+|Pré-condição|O usuário deve ser cadastrado, ter o aplicativo instalado e não estar logado em sua conta.|
+|Pós-condição|A senha do usuário recuperada com sucesso e estar logado na conta.|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| - | - |
+|Passo 1|O usuário clica no botão "Esqueci minha senha" na página de login.|
+|Passo 2|O sistema exibe um formulário para o usuário preencher com o endereço de e-mail associado à sua conta.|
+|Passo 3|O usuário preenche o formulário com seu endereço de e-mail e clica no botão "Enviar".|
+|Passo 4|O sistema envia um e-mail contendo um link de recuperação de senha para o endereço de e-mail fornecido pelo usuário.|
+|Passo 5|O usuário acessa seu e-mail, abre a mensagem de recuperação de senha e clica no link fornecido.|
+|Passo 6|O sistema exibe um formulário para o usuário criar uma nova senha.|
+|Passo 7|O usuário preenche o formulário com uma nova senha e clica no botão "Salvar".|
+|Passo 8|O sistema armazena a nova senha do usuário e redireciona o usuário para a página de login.|
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|O endereço de e-mail fornecido pelo usuário não está registrado no sistema.|
+|Passo 2|O sistema exibe uma mensagem de erro informando que o endereço de e-mail fornecido não está registrado no sistema.|
+|Passo 3|O usuário é solicitado a tentar novamente.|
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Nome|Sim|Sim|Texto|
+|Email|Sim|Sim|Texto|
+|Senha|Sim|Sim|Texto|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|"Esqueci minha senha"|Botão que abre uma nova pagina para a recuperação de senha.|
+|Email|Email do usuário registrado no sitema na criação da conta.|
+|Enviar|Ao clicar, as informações de recuperação são enviadas ao email registrado pelo usuário.|
+|Página de recuperação|Página de recuperação da senha do usuário.|
+|Enviar|Ao clicar, salva a senha recuperada e redireciona o usuário para a página de login.|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder recuperar minha senha para acessar minha conta caso eu a esqueça ou perca, a fim de não perder o acesso aos meus dados e funcionalidades da plataforma.| Certificar que todos os dados são validados e senha recuperada e o usuário consiga fazer login ao fim.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 
 ## RF08 - Transmitir tela ao vivo
 

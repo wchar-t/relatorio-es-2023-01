@@ -8,6 +8,7 @@ TODO
 - [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [ ] RF13 - Banir Usuário Do Chat. [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber pontos ao assistir transmissões ao vivo [Anderson Freitas](https://github.com/freitasanderson)
 
@@ -233,7 +234,69 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## **RF13 - Banir Usuário Do Chat**
 
+#### Autor: @afonsodglan - Afonso Dglan Cirqueira Rodrigues.
+
+---
+
+### Revisor: @freitasanderson - Anderson Freitas
+| Item | Descrição |
+| --- | --- |
+| Caso de Uso | Banir Usuário Do Chat |
+| Resumo          | Uma funcionalidade que pode ser ultilizada pelos administradores da live ou do próprio sistema, possibilitando banir usuários que violarem as diretrizes do sistema. |
+| Ator principal  | administradores de live.|
+| Ator secundário | próprio sistema.|
+| Pré-condição    | Está logado em uma das contas que fazem parte da administração da live.|
+| Pós-condição    | Não há.|
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Buscar pelo usuário.                                               |
+| Passo 2 | Clicar no botão bloquear usuário.                                  |
+| Passo 3 | Confirmar ação.                                                    |
+
+#### Campos
+
+| Campo                 | Obrigatório | Editável | Formato |
+| --------------------- | ----------- | -------- | ------- |
+| Buscar pelo usuário   | Sim         | Sim      | Texto   |
+| Bloquear usuário      | Sim         | Não      | Botão   |
+| Confirmar ação        | Sim         | Não      | Botão   |
+
+
+#### Opções de usuário
+
+| Opção                    | Descrição                                                                                             | Atalho |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------ |
+| Bloquear usuário do chat | Ao clicar nessa aba o usuário vai poder bloquear contas no chat                                       |        |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+#### Fluxo alternativo
+
+| Passos      | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+|             |                                                                                                     |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa". | Enquanto "usuário admistrador" preciso ter controle sobre o conteúdo que é inserido no chat da própria live | Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
+
+Prototipo
 ## RF15 - Vincular conta de usuário com outros serviços
 
 ### Atributos

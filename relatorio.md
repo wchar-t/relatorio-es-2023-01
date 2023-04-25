@@ -6,6 +6,7 @@ TODO
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 
 # Casos de uso e User stories
 
@@ -120,5 +121,55 @@ TODO
 |User Story|Critério de Avaliação|
 | -- | --- |
 |Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Também quero poder configurar minhas preferências de notificação e privacidade para controlar o tipo de informação que compartilho com outros usuários e quais notificações recebo. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| Todas as opções de configurações de perfil e preferências de notificação e privacidade estão disponíveis e funcionando corretamente. O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF15 - Vincular conta de usuário com outros serviços
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Vincular conta de usuário com outros serviços|
+|Resumo|Página para vincular conta do usuário com outros serviços|
+|Ator principal|Usuário cadastrado|
+|Ator secundário|Não possui|
+|Pré-condição|O usuario deve estar devidamente logado em sua conta|
+|Pós-condição|A conta do usuario estará vinculada com sua conta de outros serviços|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário deve fazer login na sua conta e clicar no botão "Configurações de perfil"|
+|Passo 2|O usuário é redirecionado para a página em que pode promover as atualizações de imagem de perfil, nome, descrição e outras configurações de visibilidade e segurança|
+|Passo 3|Na seção de vinculação de conta, o usuário deverá clicar no botão que represente o serviço ao qual ele deseja vincular a sua conta na plataforma|
+|Passo 4|O usuário será redirecionado para uma página para que ele autorize a vinculação das duas contas|
+|Passo 5|Em caso de sucesso, o usuário será redirecionado para a plataforma informando o sucesso ao vincular a conta|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário não autorizar, ou houver falha no momento da autorização de vinculação, o usuário será redirecionado para a plataforma informando que ocorreu um erro|
+|Passo 2|Se o usuário não conseguir vincular a conta a outros serviços por dificuldade, ele poderá entrar em contato com a equipe de suporte ao cliente da plataforma|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Nenhum|Não|Não|Nenhum|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Vincular conta|Vincula a conta da plataforma à uma conta de outro serviço|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Eu como usuário quero vincular minha conta na plataforma com minha conta em outro serviço, assim eu posso utilizar minhas preferências e também terei mais segurança na minha conta|Todas as opções de configurações de perfil devem estar funcionando perfeitamente, assim como o serviço ao qual o usuário deseja vincular sua conta. O usuário poderá vincular sua conta na página de configuração de perfil ao serviço que estiver disponível e desejar |
 
 ![RF](https://placehold.co/600x400/EEE/31343C)

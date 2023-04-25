@@ -6,6 +6,7 @@ TODO
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 
 # Casos de uso e User stories

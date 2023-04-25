@@ -81,8 +81,9 @@ TODO
 | -- | - |
 |Passo 1|O usuário acessa sua conta e clica em "Configurações de perfil"|
 |Passo 2|O usuário é redirecionado para a página em que pode promover as atualizações de imagem de perfil, nome, descrição e outras configurações de visibilidade e segurança|
-|Passo 3|O sistema faz as devidas validações|
-|Passo 4|Em caso de  sucesso, o usuário poderá verificar se as alterações foram aplicadas visualizando seu perfil|
+|Passo 3|Usuário as atualiza de imagem de perfil, nome e/ou descrição|
+|Passo 4|O sistema faz as devidas validações|
+|Passo 5|Em caso de  sucesso, o usuário poderá verificar se as alterações foram aplicadas visualizando seu perfil|
 
 ###  Fluxo alternativo
 
@@ -98,11 +99,6 @@ TODO
 |Foto|Sim|Sim|Imagem|
 |Nome|Sim|Sim|Texto|
 |Descrição|Sim|Sim|Texto|
-|Email|Sim|Sim|Texto|
-|Senha|Sim|Sim|Texto|
-|Notificações|Sim|Sim|Lista de itens|
-|Visibilidade|Sim|Sim|Checkbox|
-
 
 ###  Opções de usuário
 
@@ -111,17 +107,13 @@ TODO
 |Foto de Perfil?|Define/Altera a foto de perfil do usuário|
 |Nome?|Define/Altera o apelido do usuário|
 |Descrição?|Define/Altera a descrição do usuário|
-|email?|Define/Altera a email do usuário|
-|senha?|Define/Altera a email do usuário|
-|notificações?|Define a maneira que o usuário quer lidar com as notificações (não exibir, silenciar por X horas/dias)|
-|visibilidade?|Define/Altera a visibilidade do usuário (privado/público)|
 |Salvar|Ao clicar, as informações são atualizados|
 
 ###  User Story
 
 |User Story|Critério de Avaliação|
 | -- | --- |
-|Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Também quero poder configurar minhas preferências de notificação e privacidade para controlar o tipo de informação que compartilho com outros usuários e quais notificações recebo. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| Todas as opções de configurações de perfil e preferências de notificação e privacidade estão disponíveis e funcionando corretamente. O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
+|Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 

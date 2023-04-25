@@ -124,6 +124,57 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF08 - Transmitir tela ao vivo
+
+### Atributos
+
+| Item | Descrição |
+| --- | --- |
+| Caso de Uso | Função que permiti iniciar uma transmissão ao vivo |
+| Resumo | Usuário inicia transmissão para que outros usuários possam assistir |
+| Ator principal | Usuário logado |
+| Ator secundário |  |
+| Pré-condição | Estar logado |
+| Pós-condição | Tela será transmitida para outros assistirem |
+
+### Fluxo principal
+
+| Passos | Descrição |
+| --- | --- |
+| Passo 1 | Usuário acessa a página canal e clica em “Iniciar transmissão” |
+| Passo 2 | Seleciona a entrada de vídeo e áudio |
+| Passo 3 | Clica em “Iniciar” |
+
+### Fluxo alternativo
+
+| Passos | Descrição |
+| --- | --- |
+| Passo 1 | Se o usuário não estiver logado, ele será redirecionado para parte de login |
+
+### Campos
+
+| Campo | Obrigatório | Editável | Formato |
+| --- | --- | --- | --- |
+| Entrada de vídeo | Não | Sim | video/webm |
+| Entrada de áudio | Não | Sim | audio/mpeg |
+
+### Opções de usuário
+
+| Opção | Descrição |
+| --- | --- |
+| Entrada de vídeo | Escolher qual entrada de vídeo transmitir |
+| Entrada de áudio | Escolher qual entrada de áudio transmitir |
+| Salvar transmissão | Selecionar se a transmissão será gravada |
+
+### User Story
+
+| User Story | Critério de Avaliação |
+| --- | --- |
+| Como usuário, quero compartilhar com outras pessoas minhas atividades como jogar, programar ou apenas conversar. | Usuário deve estar logado. |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
 ## RF15 - Vincular conta de usuário com outros serviços
 
 ### Atributos

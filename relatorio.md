@@ -6,6 +6,7 @@ TODO
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 
@@ -116,6 +117,69 @@ TODO
 |Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF05 - Recuperar senha do usuário
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Recuperar senha|
+|Resumo|Painel para recuperação de senha do perfil|
+|Ator principal|Usuário cadastrado|
+|Ator secundário| Não possui |
+|Pré-condição|O usuário deve ser cadastrado, ter o aplicativo instalado e não estar logado em sua conta.|
+|Pós-condição|A senha do usuário recuperada com sucesso e estar logado na conta.|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| - | - |
+|Passo 1|O usuário clica no botão "Esqueci minha senha" na página de login.|
+|Passo 2|O sistema exibe um formulário para o usuário preencher com o endereço de e-mail associado à sua conta.|
+|Passo 3|O usuário preenche o formulário com seu endereço de e-mail e clica no botão "Enviar".|
+|Passo 4|O sistema envia um e-mail contendo um link de recuperação de senha para o endereço de e-mail fornecido pelo usuário.|
+|Passo 5|O usuário acessa seu e-mail, abre a mensagem de recuperação de senha e clica no link fornecido.|
+|Passo 6|O sistema exibe um formulário para o usuário criar uma nova senha.|
+|Passo 7|O usuário preenche o formulário com uma nova senha e clica no botão "Salvar".|
+|Passo 8|O sistema armazena a nova senha do usuário e redireciona o usuário para a página de login.|
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|O endereço de e-mail fornecido pelo usuário não está registrado no sistema.|
+|Passo 2|O sistema exibe uma mensagem de erro informando que o endereço de e-mail fornecido não está registrado no sistema.|
+|Passo 3|O usuário é solicitado a tentar novamente.|
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Nome|Sim|Sim|Texto|
+|Email|Sim|Sim|Texto|
+|Senha|Sim|Sim|Texto|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|"Esqueci minha senha"|Botão que abre uma nova pagina para a recuperação de senha.|
+|Email|Email do usuário registrado no sitema na criação da conta.|
+|Enviar|Ao clicar, as informações de recuperação são enviadas ao email registrado pelo usuário.|
+|Página de recuperação|Página de recuperação da senha do usuário.|
+|Enviar|Ao clicar, salva a senha recuperada e redireciona o usuário para a página de login.|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder recuperar minha senha para acessar minha conta caso eu a esqueça ou perca, a fim de não perder o acesso aos meus dados e funcionalidades da plataforma.| Certificar que todos os dados são validados e senha recuperada e o usuário consiga fazer login ao fim.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 
 ## RF08 - Transmitir tela ao vivo
 

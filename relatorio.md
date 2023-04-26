@@ -8,6 +8,7 @@ TODO
 - [ ] RF02 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [ ] RF11 - Seguir usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
 - [ ] RF13 - Banir Usuário Do Chat. [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber pontos ao assistir transmissões ao vivo [Anderson Freitas](https://github.com/freitasanderson)
@@ -231,6 +232,55 @@ TODO
 | User Story | Critério de Avaliação |
 | --- | --- |
 | Como usuário, quero compartilhar com outras pessoas minhas atividades como jogar, programar ou apenas conversar. | Usuário deve estar logado. |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF11 - Seguir usuário
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Seguir usuários|
+|Resumo|Usuário segue outro(s) usuário(s) para acompanhar suas atividades|
+|Ator principal|Usuário logado|
+|Ator secundário||
+|Pré-condição|O usuário deve estar logado em sua conta para ser capaz de seguir outro(s) usuário(s)|
+|Pós-condição|O usuário acompanhará as atividades do(s) usuário(s) que segue|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário acessa o perfil ou alguma transmissão do usuário X que deseja seguir|
+|Passo 2|O usuário se deparará com um botão contendo um texto "Seguir"|
+|Passo 3|Ao clicar no botão, o usuário imediatamente estará seguindo o usuário X e poderá acompanhar todas as suas atividades|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário acessa o perfil ou alguma transmissão do usuário X que deseja seguir|
+|Passo 2|O usuário talvez já esteja seguindo o usuário X e então se deparará com um botão destacado escrito "Seguindo"|
+|Passo 3|Ao clicar no botão, o usuário imediatamente deixará de seguir o usuário X e não mais poderá acompanhar todas as suas atividades|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|||||
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Seguir usuário X|Deixar de seguir usuário X|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como usuário, quero poder ser capaz de seguir quantos outros usuários eu quiser para que com isso eu possa acompanhar todas as suas atividades, incluindo por exemplo atualizações, novas transmissões ao vivo e novas gravações de transmissões feitas pelo(s) usuário(s) que sigo|O usuário pode seguir e deixar de seguir quantos usuários quiser e quando quiser, podendo administrar dessa forma o conteúdo que será capaz de acompanhar e que lhe será sugerido|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 

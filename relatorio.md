@@ -1,4 +1,4 @@
-# Introdução
+"# Introdução
 
 TODO
 
@@ -9,6 +9,7 @@ TODO
 - [ ] RF04 - Alteração de Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF06 - Solicitar Suporte [Helorrayne Cristine](https://github.com/HeloCris)
+- [ ] RF07 - Visualizar politica de privacidade da plataforma [Victor Campelo](https://github.com/victorcampelo14)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF11 - Seguir usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
 - [ ] RF13 - Banir Usuário Do Chat. [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
@@ -305,6 +306,59 @@ Suporte|O usuário clica no suporte|
 |Como um usuário final cadastrado no aplicativo, eu quero poder solicitar suporte quando tiver dúvidas ou problemas, para obter assistência adequada|Eu devo ter o aplicativo instalado em meu dispositivo móvel e estar logado com uma conta válida|
 
 |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF07 - Visualização da politica de privacidade da plataforma
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Cadastro de usuário|
+|Resumo|Painel para cadrasto de usuário na plataforma|
+|Ator principal|Continuidade no cadastro|
+|Ator secundário| Interrupção no cadastro |
+|Pré-condição|O usuário deverá optar por aceitar ou não os termos de politica de privacidade.|
+|Pós-condição|O cadastro do usuário dará prosseguimento.|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| - | - |
+|Passo 1|A plataforma exibe na tela principal, toda a informação para que o usuário veja sobre as políticas e dados de privacidade.|
+|Passo 2|O usuário pode escolher voltar para a tela anterior através ou dar continuidade no processo.|
+
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|Todos os dados sobre as politicas e termos de privacidade saão exibidos.|
+
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Concordo|Sim|Não|Texto|
+|Não Concordo|Não|Não|Texto|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Concordo|Aceita os termos de politica e privacidade.|
+|Não Concordo|Não aceita os termos de politicas e privacidade.|
+
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder ter acesso aos termo de politica e privacidade, para ter ciência dos dados que fornecerei para a plataforma e os riscos de exibir essas informações.| As políticas de privacidade devem ser exibidas corretamente e de forma clara para o usuário e devem ser atualizadas para a jurisdição do usuário.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 

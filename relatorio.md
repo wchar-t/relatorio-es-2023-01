@@ -4,49 +4,49 @@ TODO
 
 # Requisitos
 
-- [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
-- [ ] RF02 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
-- [ ] RF04 - Alteração de Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
-- [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [ ] RF01 - Cadastrar Usuário [João](https://github.com/wchar-t)
+- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
+- [ ] RF03 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF04 - Alterar Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
+- [ ] RF05 - Recuperar Senha do Usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF06 - Solicitar Suporte [Helorrayne Cristine](https://github.com/HeloCris)
-- [ ] RF07 - Visualizar politica de privacidade da plataforma [Victor Campelo](https://github.com/victorcampelo14)
-- [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
-- [ ] RF11 - Seguir usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
-- [ ] RF13 - Banir Usuário Do Chat. [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
-- [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
-- [ ] RF17 - Receber pontos ao assistir transmissões ao vivo [Anderson Freitas](https://github.com/freitasanderson)
+- [ ] RF07 - Visualizar Politica de Privacidade da Plataforma [Victor Campelo](https://github.com/victorcampelo14)
+- [ ] RF08 - Transmitir Tela Ao Vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [ ] RF11 - Seguir Usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
+- [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
+- [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 
 
 # Casos de uso e User stories
 
-## RF01 - Registro e Login
+## RF01 - Cadastrar Usuário
 
 ### Atributos
 
 |Item|Descrição|
 | -- |    -    |
-|Caso de Uso|Registro e Login|
-|Resumo|Painel onde se faz o registro e login de contas.|
+|Caso de Uso|Criar uma conta|
+|Resumo|Painel onde se faz o registro de contas|
 |Ator principal|Usuário que acessa|
 |Ator secundário||
 |Pré-condição|Dados válidos, conforme os campos|
-|Pós-condição|O ator estará logado|
+|Pós-condição|O ator estará registrado|
 
 ### Fluxo principal
 
 |Passos|Descrição|
 |  --  |    -    |
-|Passo 1|Escolher se fará o registro ou login|
+|Passo 1|Escolher a opção "registro"|
 |Passo 2|Preencher as informações dos campos solicitados|
 |Passo 3|O sistema faz as devidas validações|
-|Passo 4|Em caso de registro ou login com sucesso, o ator será redirecionado|
+|Passo 4|Em caso de registro, o usuário estará criado e pode ser logado|
 
 ### Fluxo alternativo
 
 |Passos|Descrição|
 |  --  |    -    |
 |Passo 1|Será notificado em falha de validação dos campos|
-|Passo 2|O usuário pode fazer logout|
 
 ### Campos
 
@@ -60,18 +60,67 @@ TODO
 
 |Opção|Descrição|
 |  -  |    -    |
-|Registro?|Define o modo de registro para o formulário|
-|Enviar|Ao clicar, a ação registro ou login é feita, a depender do campo anterior|
+|Enviar|Envia os dados ao backend, que faz validações|
 
 ### User Story
 
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
-|Como um usário, eu quero fazer registro ou login, para que eu possa ter a experiência completa da plataforma|Certificar que todos os dados são validados e o usuário consiga fazer login ao fim|
+|Como um usário, eu quero fazer registron, para que eu possa fazer login e ter a experiência completa da plataforma|Certificar que todos os dados são validados e registrados|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF02 - Editar Configurações de Perfil
+## RF02 - Fazer Login
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Entrar em uma conta|
+|Resumo|Painel onde se faz o login de contas|
+|Ator principal|Usuário que acessa|
+|Ator secundário||
+|Pré-condição|Dados válidos, conforme os campos|
+|Pós-condição|O ator estará logado|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Escolher a opção "login"|
+|Passo 2|Preencher as informações dos campos solicitados|
+|Passo 3|O sistema faz as devidas validações|
+|Passo 4|Em caso de login com sucesso, o ator será redirecionado|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Será notificado em falha de validação dos campos|
+|Passo 2|O usuário pode fazer logout|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Usuário|Sim|Sim|Texto|
+|Senha|Sim|Sim|Texto|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Enviar|Envia dados ao backend, que faz as checagens|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usário, eu quero fazer login, para que eu possa ter a experiência completa da plataforma|Certificar que todos os dados são validados e o usuário consiga fazer login ao fim|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF03 - Editar Configurações de Perfil
 ###  Atributos
 
 |Item|Descrição|
@@ -125,7 +174,7 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF04 - Alteração de Senha do Usuário
+## RF04 - Alterar Senha do Usuário
 
 ### Atributos
 
@@ -179,7 +228,7 @@ TODO
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
 
-## RF05 - Recuperar senha do usuário
+## RF05 - Recuperar Senha do Usuário
 ###  Atributos
 
 |Item|Descrição|
@@ -309,7 +358,7 @@ Suporte|O usuário clica no suporte|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF07 - Visualização da politica de privacidade da plataforma
+## RF07 - Visualização da Politica de Privacidade da Plataforma
 ###  Atributos
 
 |Item|Descrição|
@@ -362,7 +411,7 @@ Suporte|O usuário clica no suporte|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF08 - Transmitir tela ao vivo
+## RF08 - Transmitir Tela Ao Vivo
 
 ### Atributos
 
@@ -412,7 +461,7 @@ Suporte|O usuário clica no suporte|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
-## RF11 - Seguir usuário
+## RF11 - Seguir Usuário
 
 ### Atributos
 
@@ -524,7 +573,7 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa". | Enquanto "usuário admistrador" preciso ter controle sobre o conteúdo que é inserido no chat da própria live | Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
 
 Prototipo
-## RF15 - Vincular conta de usuário com outros serviços
+## RF15 - Vincular Conta de Usuário a Outros Serviços
 
 ### Atributos
 

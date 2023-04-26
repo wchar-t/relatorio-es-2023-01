@@ -7,6 +7,7 @@ TODO
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [ ] RF07 - Visualizar politica de privacidade da plataforma [Victor Campelo](https://github.com/victorcampelo14)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF13 - Banir Usuário Do Chat. [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
 - [ ] RF15 - Vincular conta de usuário com outros serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
@@ -183,7 +184,58 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF07 - Visualização da politica de privacidade da plataforma
+###  Atributos
 
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Cadastro de usuário|
+|Resumo|Painel para cadrasto de usuário na plataforma|
+|Ator principal|Continuidade no cadastro|
+|Ator secundário| Interrupção no cadastro |
+|Pré-condição|O usuário deverá optar por aceitar ou não os termos de politica de privacidade.|
+|Pós-condição|O cadastro do usuário dará prosseguimento.|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| - | - |
+|Passo 1|A plataforma exibe na tela principal, toda a informação para que o usuário veja sobre as políticas e dados de privacidade.|
+|Passo 2|O usuário pode escolher voltar para a tela anterior através ou dar continuidade no processo.|
+
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|Todos os dados sobre as politicas e termos de privacidade saão exibidos.|
+
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Concordo|Sim|Não|Texto|
+|Não Concordo|Não|Não|Texto|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Concordo|Aceita os termos de politica e privacidade.|
+|Não Concordo|Não aceita os termos de politicas e privacidade.|
+
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder ter acesso aos termo de politica e privacidade, para ter ciência dos dados que fornecerei para a plataforma e os riscos de exibir essas informações.| As políticas de privacidade devem ser exibidas corretamente e de forma clara para o usuário e devem ser atualizadas para a jurisdição do usuário.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
 ## RF08 - Transmitir tela ao vivo
 
 ### Atributos

@@ -6,6 +6,7 @@ TODO
 
 - [ ] RF01 - Registro e Login [João](https://github.com/wchar-t)
 - [ ] RF02 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF04 - Alteração de Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF05 - Recuperar senha do usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF08 - Transmitir tela ao vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF11 - Seguir usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
@@ -121,6 +122,60 @@ TODO
 |Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF04 - Alteração de Senha do Usuário
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Alteração de Senha do Usuário|
+|Resumo|Este caso de uso descreve como um usuário autenticado em um sistema pode alterar sua senha atual para uma nova senha.|
+|Ator principal|Usuário.|
+|Ator secundário|  |
+|Pré-condição|O usuário deve estar autenticado no sistema e acessando sua conta.|
+|Pós-condição|A senha do usuário é atualizada no sistema com a nova senha fornecida pelo usuário.|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário clica em "Alterar senha" na página de configurações da conta.|
+|Passo 2|O sistema exibe um formulário solicitando a senha atual e a nova senha.|
+|Passo 3|O usuário preenche o formulário com a senha atual e a nova senha.|
+|Passo 4|O sistema valida se a senha atual está correta e se a nova senha atende aos critérios de segurança (como comprimento mínimo, uso de caracteres especiais, etc.).|
+|Passo 5|Se a validação for bem-sucedida, o sistema atualiza a senha do usuário com a nova senha e exibe uma mensagem de confirmação para o usuário.|
+|Passo 6|Se a validação falhar, o sistema exibe uma mensagem de erro informando o motivo da falha (por exemplo, "senha atual incorreta" ou "nova senha muito curta") e solicita que o usuário corrija o problema e tente novamente.|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 4a|Se a senha atual não estiver correta, o sistema exibe uma mensagem de erro informando que a senha atual está incorreta e solicita que o usuário insira a senha correta.|
+|Passo 4b|Se a nova senha não atender aos critérios de segurança, o sistema exibe uma mensagem de erro informando quais critérios não foram atendidos e solicita que o usuário insira uma nova senha que atenda a esses critérios.|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Senha atual|Sim|Sim|Texto|
+|Nova senha|Sim|Sim|Texto|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Nova Senha?|Altera a Senha do usuário|
+|Salvas|Ao clicar, as informações sãosalvas atualizadas|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário, eu quero poder alterar minha senha para garantir a segurança da minha conta.|Os novos dados de senha devem ser validados e salvos, o usuário deve conseguir utilizar sua nova senha para login, com a antiga se tornando incapaz do mesmo.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 
 ## RF05 - Recuperar senha do usuário
 ###  Atributos

@@ -13,7 +13,7 @@ TODO
 - [ ] RF07 - Visualizar Politica de Privacidade da Plataforma [Victor Campelo](https://github.com/victorcampelo14)
 - [ ] RF08 - Transmitir Tela Ao Vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF11 - Seguir Usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
-- [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan) Revisador --> Anderson Freitas
+- [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
 - [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 

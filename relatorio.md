@@ -183,6 +183,73 @@ TODO
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF06 - Solicitar Suporte
+
+#### Autor: @HeloCris - Helorrayne Cristine
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Solicitar Suporte|
+|Resumo|O usuário irá visualizar o perfil, onde após entrar no perfil, ele poderá solicitar suporte caso precise. Ele visualizará algumas ajudas na tela, mas caso mesmo assim não seja possível solucionar, pode ser pedido ajuda ao suporte do aplicativo.|
+|Ator principal|Usuário final cadastrado|
+|Ator secundário| |
+|Pré-condição|  É necessário que o usuário possua o aplicativo instalado no dispositivo móvel e ter uma conta válida|
+|Pós-condição| |
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário abre o aplicativo, e na tela inicial entra com a conta caso já possua ou cria uma nova
+Passo 2|É exibido a tela inicial
+Passo 3|Para solicitar suporte vai no ícone com a foto do perfil
+Passo 4|Seleciona suporte
+Passo 5| Nessa tela o usuário poderá solicitar a ajuda referente a sua dúvida
+Passo 6| O usuário poderá tentar resolver pelo guia, ou conversar com o suporte, onde será colocado as informações do ocorrido
+Passo 7| Caso o usuário não encontre a ajuda desejada no guia, ele pode selecionar a opção de conversar com o suporte
+Passo 8| O usuário preenche as informações necessárias sobre o ocorrido, como descrição do problema, capturas de tela, etc.
+Passo 9|O usuário envia a solicitação de suporte
+Passo 10|O sistema registra a solicitação de suporte e notifica a equipe de suporte do aplicativo
+Passo 11|A equipe de suporte do aplicativo recebe a solicitação e entra em contato com o usuário para fornecer assistência e resolver o problema
+Passo 12|O suporte do aplicativo trabalha com o usuário para identificar e resolver o problema, podendo solicitar mais informações ou fornecer orientações adicionais
+Passo 13|Após o problema ser resolvido, o suporte do aplicativo fecha o chamado de suporte e registra as ações tomadas para solucioná-lo
+Passo 14| O usuário recebe a confirmação de que o problema foi resolvido e o chamado de suporte é encerrado
+
+|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|“Outras opções” de cadastro |
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Login | Sim | Sim | E-mail e senha
+Perfil| Sim | Não| Botão
+Suporte| Sim| Não| Botão|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Login|O usuário precisa estar logado
+Perfil|O usuário clica no ícone do perfil
+Suporte|O usuário clica no suporte|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário final cadastrado no aplicativo, eu quero poder solicitar suporte quando tiver dúvidas ou problemas, para obter assistência adequada|Eu devo ter o aplicativo instalado em meu dispositivo móvel e estar logado com uma conta válida|
+
+|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF08 - Transmitir tela ao vivo
 

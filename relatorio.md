@@ -4,6 +4,8 @@ TODO
 
 # Requisitos
 
+## Iteração 1:
+
 - [ ] RF01 - Cadastrar Usuário [João](https://github.com/wchar-t)
 - [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
 - [ ] RF03 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
@@ -17,6 +19,9 @@ TODO
 - [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 
+## Iteração 2:
+
+- [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 
 # Casos de uso e User stories
 
@@ -509,6 +514,65 @@ Suporte|O usuário clica no suporte|
 |Como usuário, quero poder ser capaz de seguir quantos outros usuários eu quiser para que com isso eu possa acompanhar todas as suas atividades, incluindo por exemplo atualizações, novas transmissões ao vivo e novas gravações de transmissões feitas pelo(s) usuário(s) que sigo|O usuário pode seguir e deixar de seguir quantos usuários quiser e quando quiser, podendo administrar dessa forma o conteúdo que será capaz de acompanhar e que lhe será sugerido|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+##  RF12 - Filtrar Conteúdo
+
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Filtrar Conteúdo|
+|Resumo|Opções de filtro de conteúdo para a função de busca|
+|Ator principal|Usuário cadastrado ou não |
+|Ator secundário| Não possui |
+|Pré-condição| Não possui |
+|Pós-condição| O conteúdo exibido na busca está atualizado seguindo o filtro de conteúdo |
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| O usuário acessa o campo de busca e realiza uma pesquisa|
+|Passo 2| O resultados da busca são exibidos|
+|Passo 3| O usuário seleciona os devidos filtros para o conteúdo buscado |
+|Passo 4| O resultados da busca são recarregados seguindo a condição estabelecida no filtro de conteúdo|
+|Passo 5| Em caso de sucesso, o usuário poderá ver os conteúdos dentro de um determinado perfil de conteúdo |
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|Se o usuário selecionar um filtro para o qual não existem conteúdos cadastrados, uma mensagem de "Não existem conteúdos em 'nome da categoria' " deverá em exibida.|
+|Passo 2|Se o usuário acreditar que um conteúdos está listado na categoria errada, ele poderá sugerir a alteração de categoria para esse conteúdo em específico. |
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Filtro por Data|Não|Sim|List select|
+|Filtro por Categoria|Não|Sim|List select|
+|Filtro por Idioma|Não|Sim|List select|
+|Filtro por Duração|Não|Sim|List select|
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Filtro por Data|Define/Altera um filtro para data|
+|Filtro por Categoria|Define/Altera um filtro por categoria|
+|Filtro por Idioma|Define/Altera um filtro por idioma|
+|Filtro por Duração|Define/Altera um filtro por duração|
+|Salvar|Ao clicar, os critérios de busca são atualizados e uma nova busca é realizada. |
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder escolher filtros para os conteúdos que eu buscar dentro da plataforma. Isso me permite ter uma experiência personalizada e facilitada na busca por conteúdos quem me agradem.| O usuário tem acesso a todos os filtros de busca e eles são aplicáveis para toda busca realizada, gerando um resultado ou mensagem padrão do sistema.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 
 ## **RF13 - Banir Usuário Do Chat**
 

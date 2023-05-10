@@ -24,6 +24,7 @@ TODO
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
+- [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
 
 # Casos de uso e User stories
 

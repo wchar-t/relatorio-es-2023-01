@@ -1,13 +1,12 @@
-"# Introdução
+# Introdução
 
-TODO
+Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O sistema permite que os usuários transmitam ao vivo suas jogadas de videogame, performances musicais, bate-papos e outras formas de conteúdo ao vivo. Os usuários podem assistir às transmissões ao vivo de outros usuários, segui-los, fazer comentários e interagir com os criadores de conteúdo em tempo real.
 
 # Requisitos
 
 ## Iteração 1:
 
 - [ ] RF01 - Cadastrar Usuário [João](https://github.com/wchar-t)
-- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
 - [ ] RF03 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF04 - Alterar Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF05 - Recuperar Senha do Usuário [Antonio André](https://github.com/andrebarceloschagas)
@@ -21,6 +20,7 @@ TODO
 
 ## Iteração 2:
 
+- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF10 - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)

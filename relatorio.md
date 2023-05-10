@@ -23,6 +23,7 @@ TODO
 
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
 
 # Casos de uso e User stories
 
@@ -794,5 +795,65 @@ Prototipo
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Eu como usuário quero assistir uma transmissão ao vivo e receber pontos que posso utilizar para resgatar prêmios ou benefícios na plataforma|Todas os pontos devem ser contabilizados corretamente (quando elegível) ao assistir a transmissão e devem poder serem resgatados conforme desejar alguma das opções de resgate disponíveis|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+## RF - Denunciar Transmissão
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Denunciar Transmissão|
+|Resumo|Este caso de uso permite que os usuários denunciem transmissões de streaming que contenham conteúdo inapropriado, ofensivo ou ilegal. |
+|Ator principal|Usuário|
+|Ator secundário|Moderador|
+|Pré-condição|O usuário está assistindo a uma transmissão de na plataforma.|
+|Pós-condição|A denúncia terá sido analisada e as devidas ações tomadas.|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário assiste a uma transmissão de streaming na plataforma.|
+|Passo 2|O usuário encontra conteúdo inapropriado, ofensivo ou ilegal na transmissão.|
+|Passo 3|O usuário clica no botão "Denunciar" na página da transmissão.|
+|Passo 4|A plataforma exibe uma janela de confirmação para o usuário.|
+|Passo 5|O usuário confirma a denúncia.|
+|Passo 6|A plataforma envia a denúncia para os moderadores.|
+|Passo 7|Os moderadores analisam a denúncia e tomam medidas apropriadas para remover a transmissão e punir o streamer, se necessário.|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 4a|O usuário confirma a denúncia e o processo segue normalmente.|
+|Passo 4b|O usuário pode decidir cancelar a denúncia na janela de confirmação, a denúncia não é enviada para os moderadores, a transmissão continua normalmente.|
+|Passo 7a|A denúncia é avaliada e considerada válida pelos moderadores, eles podem decidem qual ação tomar contra o streamer, como uma suspensão, advertência ou banimento permanente.|
+|Passo 7b|A denúncia é avaliada e considerada inválida pelos moderadores, a transmissão continua normalmente.|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Tipo da Denúncia|Sim|Sim|Texto|
+|Descrição detalhada da denúncia|Não|Sim|Texto|
+|Momento da violação|Não|Sim|Texto|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Denunciar?|Abre a janela para denúncia.|
+|Selecionar o Tipo da Denúncia|Seleciona um tipo específico de infração cometida na transmissão.|
+|Confirmar Denúncia|Ao clicar, as informações são enviadas aos moderadores.|
+|Cancelar Denúncia|Ao clicar, as informações são excluídas.|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário da plataforma de streaming, quero ter a opção de denunciar transmissões que violem as políticas da plataforma, para que os moderadores possam tomar as medidas apropriadas e manter a comunidade segura e saudável.|O formulário de denúncia deve ser facilmente acessível e visível na plataforma de streaming, o formulário deve incluir campos claros e relevantes para o tipo de denúncia que o usuário deseja fazer, a plataforma deve levar as denúncias a sério e tomar medidas apropriadas em tempo hábil, caso sejam confirmadas violações das políticas, a plataforma de streaming deve monitorar e avaliar continuamente as denúncias para garantir que as políticas sejam atualizadas e eficazes na proteção da comunidade.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)

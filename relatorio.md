@@ -18,7 +18,7 @@ TODO
 - [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
 - [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
-
+- [x] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
 ## Iteração 2:
 
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
@@ -582,7 +582,8 @@ Suporte|O usuário clica no suporte|
 
 ---
 
-### Revisor: @freitasanderson - Anderson Freitas
+### Revisor: @emanuelcatao - Emanuel Catão Montenegro
+
 | Item | Descrição |
 | --- | --- |
 | Caso de Uso | Banir Usuário Do Chat |
@@ -857,3 +858,67 @@ Prototipo
 |Como um usuário da plataforma de streaming, quero ter a opção de denunciar transmissões que violem as políticas da plataforma, para que os moderadores possam tomar as medidas apropriadas e manter a comunidade segura e saudável.|O formulário de denúncia deve ser facilmente acessível e visível na plataforma de streaming, o formulário deve incluir campos claros e relevantes para o tipo de denúncia que o usuário deseja fazer, a plataforma deve levar as denúncias a sério e tomar medidas apropriadas em tempo hábil, caso sejam confirmadas violações das políticas, a plataforma de streaming deve monitorar e avaliar continuamente as denúncias para garantir que as políticas sejam atualizadas e eficazes na proteção da comunidade.|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+## **RF21 - Definir qualidade do vídeo**
+
+#### Autor: @afonsodglan - Afonso Dglan Cirqueira Rodrigues.
+
+---
+
+### Revisor: 
+| Item | Descrição |
+| ---  | --- |
+| Caso de Uso | Definir qualidade do vídeo |
+| Resumo          | Uma funcionalidade que pode ser ultilizada pelos usuários da live, possibilitando definir uma qualidade de vídeo maior ou menor. |
+| Ator principal  | Usuário.|
+| Ator secundário | |
+| Pré-condição    | Estar assistindo uma live.|
+| Pós-condição    | Não há.|
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Clicar no botão de configurações de vídeo                          |
+| Passo 2 | Clicar no botão de qualidade                                       |
+| Passo 3 | Selecionar a opção da qualidade do vídeo                           |
+
+#### Campos
+
+| Campo                 | Obrigatório | Editável | Formato |
+| --------------------- | ----------- | -------- | ------- |
+| Configurações de vídeo| Sim         | Não      | Botão   |
+| Qualidade             | Sim         | Não      | Botão   |
+| Qualidades disponíveis| Não         | Sim      | Botão   |
+
+
+#### Opções de usuário
+
+| Opção                                | Descrição                                                                                                                                 | Atalho |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------| ------ |
+| Alterar a qualidade de vídeo da live | Ao clicar no botão de configuração de vídeo terá a opção de qualidade de vídeo onde o usuário pode alterar a qualidade que deseja assistir|        |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+#### Fluxo alternativo
+
+| Passos      | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+|             |                                                                                                     |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário" quero "poder definir a qualidade do vídeo da live que estou assistindo." para "ter mais controle sobre a quantidade de consumo da minha banda de internet". | Enquanto "usuário" preciso ter controle sobre a quantidade de consumo da banda de internet que está sendo consumida para assistir a live ou para assistir a live com uma alta definição | Certifique-se que o usuário é capaz de **Definir a qualidade do vídeo da live.** |
+
+Prototipo

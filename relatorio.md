@@ -25,6 +25,7 @@ TODO
 - [ ] RF10 - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
 - [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF16 - Buscar Termo na Plataforma [Helorrayne Cristine](https://github.com/HeloCris)
+- [ ] RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 - [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
@@ -844,7 +845,7 @@ Buscar| Sim| Sim|Botão |
 |Opção|Descrição|
 |  -  |    -    |
 |Login|O usuário precisa estar logado
-Home|O usuário clica no ícone home 
+Home|O usuário clica no ícone home
 Buscar|O usuário clica no ícone de pesquisa|
 
 ### User Story
@@ -912,7 +913,59 @@ Buscar|O usuário clica no ícone de pesquisa|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo
 
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso| Receber brindes ao assistir|
+|Resumo| Usuários recebem brindes aleatoriamente conforme assistem uma transmissão especial ao vivo|
+|Ator principal| Usuário logado|
+|Ator secundário| Usuário transmitindo|
+|Pré-condição|O usuário deve estar logado em sua conta e estar assistindo uma transmissão ao vivo marcada como especial|
+|Pós-condição|O usuário, se for sorteado, podera receber brindes em jogos, outros sites e etc|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário logado acessa uma transmissão ao vivo marcada como especial|
+|Passo 2|Conforme a transmissão selecionada estiver sendo reproduzida, não silenciada e não minimizada o usuário tem a possibilidade de ser sorteado|
+|Passo 3|O usuário que está transmitindo ou alguém com permissões realiza um sorteio entre os telespectadores válidos e o sistema escolhe o do usuário premiado|
+|Passo 4|Posteriormente o usuário resgatará esse brinde em seu jogo, site ou outro que está conectado em sua conta na plataforma|
+
+
+
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário não estiver logado ou estiver com alguma restrição, será alertado que não está elegível para participar do sorteio|
+|Passo 2|Se o usuário não estiver logado, ele poderá efetuar login. Se for algum problema no sistema, ele poderá entrar em contato com a equipe de suporte ao cliente para obter ajuda|
+
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Nenhum|Não|Não|Nenhum|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Receber Brindes|O usuário recebe brindes em jogo, site ou outro|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Eu como usuário quero assistir uma transmissão ao vivo e poder ser sorteado para ganhar prêmios ou benefícios na plataforma ou outras, como jogos, sites, entre outros|
+Todos os brindes devem ser entregues corretamente ao usuário sorteado durante a transmissão especial|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
 ## RF19 - Denunciar Transmissão
 
 ### Atributos
@@ -1038,7 +1091,7 @@ Buscar|O usuário clica no ícone de pesquisa|
 
 ---
 
-### Revisor: 
+### Revisor:
 | Item | Descrição |
 | ---  | --- |
 | Caso de Uso | Definir qualidade do vídeo |

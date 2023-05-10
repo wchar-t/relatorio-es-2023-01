@@ -1,11 +1,12 @@
-"# Introdução
+# Introdução
 
-TODO
+Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O sistema permite que os usuários transmitam ao vivo suas jogadas de videogame, performances musicais, bate-papos e outras formas de conteúdo ao vivo. Os usuários podem assistir às transmissões ao vivo de outros usuários, segui-los, fazer comentários e interagir com os criadores de conteúdo em tempo real.
 
 # Requisitos
 
+## Iteração 1:
+
 - [ ] RF01 - Cadastrar Usuário [João](https://github.com/wchar-t)
-- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
 - [ ] RF03 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF04 - Alterar Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF05 - Recuperar Senha do Usuário [Antonio André](https://github.com/andrebarceloschagas)
@@ -17,6 +18,18 @@ TODO
 - [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 
+## Iteração 2:
+
+- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
+- [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF10 - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [ ] RF16 - Buscar Termo na Plataforma [Helorrayne Cristine](https://github.com/HeloCris)
+- [ ] RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
+- [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
+- [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [ ] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
+- [ ] RF22 - Ativar notificações de usuário que segue [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
 
 # Casos de uso e User stories
 
@@ -461,6 +474,55 @@ Suporte|O usuário clica no suporte|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+
+##  RF10 - Salvar Transmissão
+
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Salvar Transmissão|
+|Resumo|O usuário vai ter a opção de salvar a transmissão apos encerrado|
+|Ator principal|Dono da transmissão|
+|Ator secundário|Não possui|
+|Pré-condição|Somente após encerrado a transmissão|
+|Pós-condição|Não possui|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| O usuário acessa o página com as transmissões |
+|Passo 2| O usuário seleciona a transmissão |
+|Passo 3| O usuário clica no botão de salvar transmissão |
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| Usuário finaliza transmissão |
+|Passo 2| Usuário clica no botão de salvar transmissão |
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|||||
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Salvar transmissão|Define/Altera um filtro para data|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder salvar minhas transmissões em meu dispositivo. Isso me permite editar e compartilhar em outras plataformas.| O usuário tem acesso às transmissões passadas e pode salvá-las. |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 ## RF11 - Seguir Usuário
 
 ### Atributos
@@ -510,13 +572,73 @@ Suporte|O usuário clica no suporte|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+
+##  RF12 - Filtrar Conteúdo
+
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Filtrar Conteúdo|
+|Resumo|Opções de filtro de conteúdo para a função de busca|
+|Ator principal|Usuário cadastrado ou não |
+|Ator secundário| Não possui |
+|Pré-condição| Não possui |
+|Pós-condição| O conteúdo exibido na busca está atualizado seguindo o filtro de conteúdo |
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| O usuário acessa o campo de busca e realiza uma pesquisa|
+|Passo 2| O resultados da busca são exibidos|
+|Passo 3| O usuário seleciona os devidos filtros para o conteúdo buscado |
+|Passo 4| O resultados da busca são recarregados seguindo a condição estabelecida no filtro de conteúdo|
+|Passo 5| Em caso de sucesso, o usuário poderá ver os conteúdos dentro de um determinado perfil de conteúdo |
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|Se o usuário selecionar um filtro para o qual não existem conteúdos cadastrados, uma mensagem de "Não existem conteúdos em 'nome da categoria' " deverá em exibida.|
+|Passo 2|Se o usuário acreditar que um conteúdos está listado na categoria errada, ele poderá sugerir a alteração de categoria para esse conteúdo em específico. |
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Filtro por Data|Não|Sim|List select|
+|Filtro por Categoria|Não|Sim|List select|
+|Filtro por Idioma|Não|Sim|List select|
+|Filtro por Duração|Não|Sim|List select|
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Filtro por Data|Define/Altera um filtro para data|
+|Filtro por Categoria|Define/Altera um filtro por categoria|
+|Filtro por Idioma|Define/Altera um filtro por idioma|
+|Filtro por Duração|Define/Altera um filtro por duração|
+|Salvar|Ao clicar, os critérios de busca são atualizados e uma nova busca é realizada. |
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder escolher filtros para os conteúdos que eu buscar dentro da plataforma. Isso me permite ter uma experiência personalizada e facilitada na busca por conteúdos quem me agradem.| O usuário tem acesso a todos os filtros de busca e eles são aplicáveis para toda busca realizada, gerando um resultado ou mensagem padrão do sistema.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
 ## **RF13 - Banir Usuário Do Chat**
 
 #### Autor: @afonsodglan - Afonso Dglan Cirqueira Rodrigues.
 
 ---
 
-### Revisor: @freitasanderson - Anderson Freitas
+### Revisor: @emanuelcatao - Emanuel Catão Montenegro
+
 | Item | Descrição |
 | --- | --- |
 | Caso de Uso | Banir Usuário Do Chat |
@@ -573,6 +695,60 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa". | Enquanto "usuário admistrador" preciso ter controle sobre o conteúdo que é inserido no chat da própria live | Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
 
 Prototipo
+
+## RF14 - Compartilhar Perfil da Plataforma
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Compartilhar Transmissão Ao Vivo da Plataforma|
+|Resumo|Botão em que ao clicar, o usuário da plataforma consegue compartilhar uma transmissão ao vivo da plataforma para outras pessoas, por meio de um link.|
+|Ator principal|Usuário cadastrado ou não|
+|Ator secundário|Não possui|
+|Pré-condição|Não possui|
+|Pós-condição|Não possui|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Entrar na transmissão ao vivo da plataforma que deseja compartilhar|
+|Passo 2|Clicar no botão de compartilhar|
+|Passo 3|Escolher entre as opões de compartilhamento|
+|Passo 4|Completar segundo a plaforma em que ele irá compartilhar ou enviar o link copiado na área de transferência|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário desistir de compartilhar, basta clicar fora da caixa de opções disponíveis para fechar|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Copiar URL|Não|Não|Botão|
+|Twitter|Não|Não|Botão|
+|Facebook|Não|Não|Botão|
+
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Copiar URL|Copia a URL da transmissão para a área de transferência do usuário|
+|Twitter|Abre a plataforma Twitter com um 'tweet' pré-montado para o usuário postar contendo o título da tramissão e a URL para a transmissão|
+|Facebook|Abra a plataforma Facebook com uma publicação pré-montada para o usuário postar contendo a URL da transmissão|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como usuário eu quero poder compartilhar uma transmissão ao vivo da plataforma para divulgar/convidar outras pessoas a assistirem a transmissão ao vivo.|A transmissão estar ao vivo dentro da plataforma, assim podendo compartilhar a mesma para outras pessoas, em suas redes sociais.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 ## RF15 - Vincular Conta de Usuário a Outros Serviços
 
 ### Atributos
@@ -623,6 +799,66 @@ Prototipo
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF16 - Buscar Termo na Plataforma
+#### Autor: @HeloCris - Helorrayne Cristine
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Buscar Termo na Plataforma|
+|Resumo|Permite ao usuário final cadastrado buscar por um termo na plataforma e visualizar os resultados da busca na tela.|
+|Ator principal|Usuário final cadastrado|
+|Ator secundário|Sistema de busca da plataforma|
+|Pré-condição| O usuário deve estar logado na plataforma.|
+|Pós-condição|O usuário visualiza os resultados da busca na tela. |
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário abre o aplicativo, e na tela inicial entra com a conta caso já possua ou cria uma nova.
+Passo 2|É exibido a tela inicial.
+Passo 3|O usuário clica na barra de busca.
+Passo 4|O usuário digita o termo que deseja buscar.
+Passo 5|O sistema de busca da plataforma recebe o termo digitado pelo usuário.
+Passo 6|O sistema de busca da plataforma realiza uma busca nos dados da plataforma que correspondem ao termo buscado.
+Passo 7|O sistema de busca da plataforma retorna os resultados da busca para o usuário.
+Passo 8|O usuário visualiza os resultados da busca na tela.
+
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Caso não haja dados na plataforma correspondentes ao termo buscado, o sistema de busca retorna uma mensagem de que não foram encontrados resultados para a busca. |
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Login | Sim | Sim | E-mail e senha
+Home| Sim | Sim| Botão
+Buscar| Sim| Sim|Botão |
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Login|O usuário precisa estar logado
+Home|O usuário clica no ícone home
+Buscar|O usuário clica no ícone de pesquisa|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário da plataforma, eu gostaria de poder buscar por termos na plataforma para encontrar informações relevantes de maneira rápida e fácil. Eu quero ser capaz de digitar o termo que desejo buscar na barra de busca e visualizar os resultados da busca na tela. Se não houver dados correspondentes ao termo que busco, eu quero receber uma mensagem informando que não foram encontrados resultados para minha busca.|1-A barra de busca deve estar visível e facilmente acessível para o usuário. 2-O sistema de busca deve ser capaz de buscar por termos em todos os dados relevantes da plataforma. 3-Os resultados da busca devem ser apresentados de forma clara e organizada para o usuário. 4-O sistema de busca deve retornar resultados relevantes e precisos para os termos buscados. 5- Se não houver dados correspondentes ao termo buscado, o sistema de busca deve retornar uma mensagem clara informando que não foram encontrados resultados para a busca. 6-A busca deve ser realizada de forma eficiente e rápida, sem causar atrasos ou interrupções no uso da plataforma pelo usuário.
+
+
+
+
+![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF17 - Receber pontos ao assistir transmissões ao vivo
 
@@ -677,3 +913,289 @@ Prototipo
 |Eu como usuário quero assistir uma transmissão ao vivo e receber pontos que posso utilizar para resgatar prêmios ou benefícios na plataforma|Todas os pontos devem ser contabilizados corretamente (quando elegível) ao assistir a transmissão e devem poder serem resgatados conforme desejar alguma das opções de resgate disponíveis|
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
+
+## RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso| Receber brindes ao assistir|
+|Resumo| Usuários recebem brindes aleatoriamente conforme assistem uma transmissão especial ao vivo|
+|Ator principal| Usuário logado|
+|Ator secundário| Usuário transmitindo|
+|Pré-condição|O usuário deve estar logado em sua conta e estar assistindo uma transmissão ao vivo marcada como especial|
+|Pós-condição|O usuário, se for sorteado, podera receber brindes em jogos, outros sites e etc|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário logado acessa uma transmissão ao vivo marcada como especial|
+|Passo 2|Conforme a transmissão selecionada estiver sendo reproduzida, não silenciada e não minimizada o usuário tem a possibilidade de ser sorteado|
+|Passo 3|O usuário que está transmitindo ou alguém com permissões realiza um sorteio entre os telespectadores válidos e o sistema escolhe o do usuário premiado|
+|Passo 4|Posteriormente o usuário resgatará esse brinde em seu jogo, site ou outro que está conectado em sua conta na plataforma|
+
+
+
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário não estiver logado ou estiver com alguma restrição, será alertado que não está elegível para participar do sorteio|
+|Passo 2|Se o usuário não estiver logado, ele poderá efetuar login. Se for algum problema no sistema, ele poderá entrar em contato com a equipe de suporte ao cliente para obter ajuda|
+
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Nenhum|Não|Não|Nenhum|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Receber Brindes|O usuário recebe brindes em jogo, site ou outro|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Eu como usuário quero assistir uma transmissão ao vivo e poder ser sorteado para ganhar prêmios ou benefícios na plataforma ou outras, como jogos, sites, entre outros|
+Todos os brindes devem ser entregues corretamente ao usuário sorteado durante a transmissão especial|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+## RF19 - Denunciar Transmissão
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Denunciar Transmissão|
+|Resumo|Este caso de uso permite que os usuários denunciem transmissões de streaming que contenham conteúdo inapropriado, ofensivo ou ilegal. |
+|Ator principal|Usuário|
+|Ator secundário|Moderador|
+|Pré-condição|O usuário está assistindo a uma transmissão de na plataforma.|
+|Pós-condição|A denúncia terá sido analisada e as devidas ações tomadas.|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário assiste a uma transmissão de streaming na plataforma.|
+|Passo 2|O usuário encontra conteúdo inapropriado, ofensivo ou ilegal na transmissão.|
+|Passo 3|O usuário clica no botão "Denunciar" na página da transmissão.|
+|Passo 4|A plataforma exibe uma janela de confirmação para o usuário.|
+|Passo 5|O usuário confirma a denúncia.|
+|Passo 6|A plataforma envia a denúncia para os moderadores.|
+|Passo 7|Os moderadores analisam a denúncia e tomam medidas apropriadas para remover a transmissão e punir o streamer, se necessário.|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 4a|O usuário confirma a denúncia e o processo segue normalmente.|
+|Passo 4b|O usuário pode decidir cancelar a denúncia na janela de confirmação, a denúncia não é enviada para os moderadores, a transmissão continua normalmente.|
+|Passo 7a|A denúncia é avaliada e considerada válida pelos moderadores, eles podem decidem qual ação tomar contra o streamer, como uma suspensão, advertência ou banimento permanente.|
+|Passo 7b|A denúncia é avaliada e considerada inválida pelos moderadores, a transmissão continua normalmente.|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Tipo da Denúncia|Sim|Sim|Texto|
+|Descrição detalhada da denúncia|Não|Sim|Texto|
+|Momento da violação|Não|Sim|Texto|
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Denunciar?|Abre a janela para denúncia.|
+|Selecionar o Tipo da Denúncia|Seleciona um tipo específico de infração cometida na transmissão.|
+|Confirmar Denúncia|Ao clicar, as informações são enviadas aos moderadores.|
+|Cancelar Denúncia|Ao clicar, as informações são excluídas.|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário da plataforma de streaming, quero ter a opção de denunciar transmissões que violem as políticas da plataforma, para que os moderadores possam tomar as medidas apropriadas e manter a comunidade segura e saudável.|O formulário de denúncia deve ser facilmente acessível e visível na plataforma de streaming, o formulário deve incluir campos claros e relevantes para o tipo de denúncia que o usuário deseja fazer, a plataforma deve levar as denúncias a sério e tomar medidas apropriadas em tempo hábil, caso sejam confirmadas violações das políticas, a plataforma de streaming deve monitorar e avaliar continuamente as denúncias para garantir que as políticas sejam atualizadas e eficazes na proteção da comunidade.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+## RF20 - Bloquear Usuário
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Bloquear Usuário|
+|Resumo|Permite que um usuário bloqueie o perfil de outro usuário|
+|Ator principal|Usuário final cadastrado|
+|Ator secundário|Usuário cujo perfil será bloqueado|
+|Pré-condição|O usuário deve ser cadastrado, ter o aplicativo instalado e estar logado na sua conta|
+|Pós-condição|O perfil do usuário bloqueado não estará mais visível para o usuário que realizou o bloqueio|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| --   | - |
+|Passo 1|O usuário acessa o perfil do usuário que deseja bloquear.|
+|Passo 2|O usuário clica no botão "Bloquear".|
+|Passo 3|O sistema exibe uma mensagem de confirmação perguntando se o usuário realmente deseja bloquear o perfil.|
+|Passo 4|O usuário confirma a ação.|
+|Passo 5|O sistema realiza o bloqueio do perfil do usuário e exibe uma mensagem de confirmação.|
+|Passo 6|O Sistema redireciona para a "Home".|
+
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|No Passo 4, se o usuário cancelar a ação de bloqueio, o fluxo retorna para o Passo 1.|
+|Passo 2|No Passo 5, se ocorrer algum erro durante a atualização da lista de usuários bloqueados, o aplicativo exibe uma mensagem de erro e o fluxo retorna para o Passo 1.|
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Usuário|Sim|Não|Botão|
+|Bloquear|Sim|Não|Botão|
+|Confirmar|Sim|Não|Botão|
+|Cancelar|Sim|Não|Botão|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Bloquear|Permite bloquear o perfil de outro usuário.|
+|Confirmar|Confirma a ação de bloqueio.|
+|Cancelar|Cancela a ação de bloqueio.|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder bloquear o perfil de outro usuário para não visualizar suas publicações, a fim de melhorar minha experiência na plataforma.|Certificar que o perfil do usuário bloqueado não está mais visível para o usuário que realizou o bloqueio.|
+
+
+
+## **RF21 - Definir qualidade do vídeo**
+
+#### Autor: @afonsodglan - Afonso Dglan Cirqueira Rodrigues.
+
+---
+
+### Revisor:
+| Item | Descrição |
+| ---  | --- |
+| Caso de Uso | Definir qualidade do vídeo |
+| Resumo          | Uma funcionalidade que pode ser ultilizada pelos usuários da live, possibilitando definir uma qualidade de vídeo maior ou menor. |
+| Ator principal  | Usuário.|
+| Ator secundário | |
+| Pré-condição    | Estar assistindo uma live.|
+| Pós-condição    | Não há.|
+
+#### Fluxo principal
+
+| Passos  | Descrição                                                          |
+| ------- | ------------------------------------------------------------------ |
+| Passo 1 | Clicar no botão de configurações de vídeo                          |
+| Passo 2 | Clicar no botão de qualidade                                       |
+| Passo 3 | Selecionar a opção da qualidade do vídeo                           |
+
+#### Campos
+
+| Campo                 | Obrigatório | Editável | Formato |
+| --------------------- | ----------- | -------- | ------- |
+| Configurações de vídeo| Sim         | Não      | Botão   |
+| Qualidade             | Sim         | Não      | Botão   |
+| Qualidades disponíveis| Não         | Sim      | Botão   |
+
+
+#### Opções de usuário
+
+| Opção                                | Descrição                                                                                                                                 | Atalho |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------| ------ |
+| Alterar a qualidade de vídeo da live | Ao clicar no botão de configuração de vídeo terá a opção de qualidade de vídeo onde o usuário pode alterar a qualidade que deseja assistir|        |
+
+#### Relatório de usuário
+
+| Campo | Descrição | Formato |
+| ----- | --------- | ------- |
+| --    | --        | --      |
+
+#### Fluxo alternativo
+
+| Passos      | Descrição                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+|             |                                                                                                     |
+
+
+# User story
+
+Agora iremos escrever uma história de usuário para uma persona.
+
+**Persona um, usuário comum.**
+
+| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| Eu enquanto "usuário" quero "poder definir a qualidade do vídeo da live que estou assistindo." para "ter mais controle sobre a quantidade de consumo da minha banda de internet". | Enquanto "usuário" preciso ter controle sobre a quantidade de consumo da banda de internet que está sendo consumida para assistir a live ou para assistir a live com uma alta definição | Certifique-se que o usuário é capaz de **Definir a qualidade do vídeo da live.** |
+
+
+## RF22 - Ativar notificações de usuário que segue
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Função que permite ativar notificações da atividade de algum usuário que segue|
+|Resumo|Usuário ativa a função e então passa a receber notificações|
+|Ator principal|Usuário logado|
+|Ator secundário||
+|Pré-condição|O usuário deve estar logado em sua conta para ser capaz de ativar a notificação da atividade de algum usuário e além disso deve também já estar seguindo o usuário em questão|
+|Pós-condição|O usuário acompanhará as atividades do(s) usuário(s) que segue por meio de notificações|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário verá no perfil de um usuário X que segue a função de notificações desativada através dum ícone de botão|
+|Passo 2|Ao clicar no botão, o usuário imediatamente estará acompanhando as atividades do usuário X através de notificações|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário verá no perfil de um usuário X que segue a função de notificações ativada através dum ícone de botão|
+|Passo 2|Ao clicar no botão, o usuário imediatamente deixará de acompanhar as atividades do usuário X através de notificações|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|||||
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Ativar notificações de usuário X|Desativar notificações de usuário X|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como usuário, quero poder ser capaz de ser notificado sobre as atividades dos usuários que sigo na plataforma de streaming. Assim como, também, desejo ser capaz de desativar as notificações no momento em que eu quiser|O usuário pode ativar e desativar as notificações de um usuário que segue no momento em que quiser|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+
+Prototipo

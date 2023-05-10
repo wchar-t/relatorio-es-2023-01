@@ -18,13 +18,15 @@ TODO
 - [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
 - [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 - [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
-- [x] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
+
 ## Iteração 2:
 
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
 - [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [ ] RF16 - Buscar Termo na Plataforma [Helorrayne Cristine](https://github.com/HeloCris)
 - [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [ ] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
 
 # Casos de uso e User stories
 
@@ -745,6 +747,66 @@ Prototipo
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+## RF16 - Buscar Termo na Plataforma
+#### Autor: @HeloCris - Helorrayne Cristine
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Buscar Termo na Plataforma|
+|Resumo|Permite ao usuário final cadastrado buscar por um termo na plataforma e visualizar os resultados da busca na tela.|
+|Ator principal|Usuário final cadastrado|
+|Ator secundário|Sistema de busca da plataforma|
+|Pré-condição| O usuário deve estar logado na plataforma.|
+|Pós-condição|O usuário visualiza os resultados da busca na tela. |
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário abre o aplicativo, e na tela inicial entra com a conta caso já possua ou cria uma nova.
+Passo 2|É exibido a tela inicial.
+Passo 3|O usuário clica na barra de busca.
+Passo 4|O usuário digita o termo que deseja buscar.
+Passo 5|O sistema de busca da plataforma recebe o termo digitado pelo usuário.
+Passo 6|O sistema de busca da plataforma realiza uma busca nos dados da plataforma que correspondem ao termo buscado.
+Passo 7|O sistema de busca da plataforma retorna os resultados da busca para o usuário.
+Passo 8|O usuário visualiza os resultados da busca na tela.
+
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Caso não haja dados na plataforma correspondentes ao termo buscado, o sistema de busca retorna uma mensagem de que não foram encontrados resultados para a busca. |
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Login | Sim | Sim | E-mail e senha
+Home| Sim | Sim| Botão
+Buscar| Sim| Sim|Botão |
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Login|O usuário precisa estar logado
+Home|O usuário clica no ícone home 
+Buscar|O usuário clica no ícone de pesquisa|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como um usuário da plataforma, eu gostaria de poder buscar por termos na plataforma para encontrar informações relevantes de maneira rápida e fácil. Eu quero ser capaz de digitar o termo que desejo buscar na barra de busca e visualizar os resultados da busca na tela. Se não houver dados correspondentes ao termo que busco, eu quero receber uma mensagem informando que não foram encontrados resultados para minha busca.|1-A barra de busca deve estar visível e facilmente acessível para o usuário. 2-O sistema de busca deve ser capaz de buscar por termos em todos os dados relevantes da plataforma. 3-Os resultados da busca devem ser apresentados de forma clara e organizada para o usuário. 4-O sistema de busca deve retornar resultados relevantes e precisos para os termos buscados. 5- Se não houver dados correspondentes ao termo buscado, o sistema de busca deve retornar uma mensagem clara informando que não foram encontrados resultados para a busca. 6-A busca deve ser realizada de forma eficiente e rápida, sem causar atrasos ou interrupções no uso da plataforma pelo usuário.
+
+
+
+
+![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF17 - Receber pontos ao assistir transmissões ao vivo
 
@@ -801,7 +863,7 @@ Prototipo
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
 
-## RF - Denunciar Transmissão
+## RF19 - Denunciar Transmissão
 
 ### Atributos
 

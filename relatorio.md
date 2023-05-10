@@ -29,6 +29,7 @@ TODO
 - [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
 - [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
 - [ ] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
+- [ ] RF22 - Ativar notificações de usuário que segue [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
 
 # Casos de uso e User stories
 
@@ -1146,5 +1147,55 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | Eu enquanto "usuário" quero "poder definir a qualidade do vídeo da live que estou assistindo." para "ter mais controle sobre a quantidade de consumo da minha banda de internet". | Enquanto "usuário" preciso ter controle sobre a quantidade de consumo da banda de internet que está sendo consumida para assistir a live ou para assistir a live com uma alta definição | Certifique-se que o usuário é capaz de **Definir a qualidade do vídeo da live.** |
+
+
+## RF22 - Ativar notificações de usuário que segue
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Função que permite ativar notificações da atividade de algum usuário que segue|
+|Resumo|Usuário ativa a função e então passa a receber notificações|
+|Ator principal|Usuário logado|
+|Ator secundário||
+|Pré-condição|O usuário deve estar logado em sua conta para ser capaz de ativar a notificação da atividade de algum usuário e além disso deve também já estar seguindo o usuário em questão|
+|Pós-condição|O usuário acompanhará as atividades do(s) usuário(s) que segue por meio de notificações|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário verá no perfil de um usuário X que segue a função de notificações desativada através dum ícone de botão|
+|Passo 2|Ao clicar no botão, o usuário imediatamente estará acompanhando as atividades do usuário X através de notificações|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|O usuário verá no perfil de um usuário X que segue a função de notificações ativada através dum ícone de botão|
+|Passo 2|Ao clicar no botão, o usuário imediatamente deixará de acompanhar as atividades do usuário X através de notificações|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|||||
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Ativar notificações de usuário X|Desativar notificações de usuário X|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como usuário, quero poder ser capaz de ser notificado sobre as atividades dos usuários que sigo na plataforma de streaming. Assim como, também, desejo ser capaz de desativar as notificações no momento em que eu quiser|O usuário pode ativar e desativar as notificações de um usuário que segue no momento em que quiser|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
 
 Prototipo

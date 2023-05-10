@@ -22,6 +22,7 @@ TODO
 ## Iteração 2:
 
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
 
 # Casos de uso e User stories
 
@@ -637,6 +638,60 @@ Agora iremos escrever uma história de usuário para uma persona.
 | Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa". | Enquanto "usuário admistrador" preciso ter controle sobre o conteúdo que é inserido no chat da própria live | Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
 
 Prototipo
+
+## RF14 - Compartilhar Perfil da Plataforma
+
+### Atributos
+
+|Item|Descrição|
+| -- |    -    |
+|Caso de Uso|Compartilhar Transmissão Ao Vivo da Plataforma|
+|Resumo|Botão em que ao clicar, o usuário da plataforma consegue compartilhar uma transmissão ao vivo da plataforma para outras pessoas, por meio de um link.|
+|Ator principal|Usuário cadastrado ou não|
+|Ator secundário|Não possui|
+|Pré-condição|Não possui|
+|Pós-condição|Não possui|
+
+### Fluxo principal
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Entrar na transmissão ao vivo da plataforma que deseja compartilhar|
+|Passo 2|Clicar no botão de compartilhar|
+|Passo 3|Escolher entre as opões de compartilhamento|
+|Passo 4|Completar segundo a plaforma em que ele irá compartilhar ou enviar o link copiado na área de transferência|
+
+### Fluxo alternativo
+
+|Passos|Descrição|
+|  --  |    -    |
+|Passo 1|Se o usuário desistir de compartilhar, basta clicar fora da caixa de opções disponíveis para fechar|
+
+### Campos
+
+|Campo|Obrigatório|Editável|Formato|
+|  -  |     -     |   --   |   -   |
+|Copiar URL|Não|Não|Botão|
+|Twitter|Não|Não|Botão|
+|Facebook|Não|Não|Botão|
+
+
+### Opções de usuário
+
+|Opção|Descrição|
+|  -  |    -    |
+|Copiar URL|Copia a URL da transmissão para a área de transferência do usuário|
+|Twitter|Abre a plataforma Twitter com um 'tweet' pré-montado para o usuário postar contendo o título da tramissão e a URL para a transmissão|
+|Facebook|Abra a plataforma Facebook com uma publicação pré-montada para o usuário postar contendo a URL da transmissão|
+
+### User Story
+
+|User Story|Critério de Avaliação|
+|    --    |         ---         |
+|Como usuário eu quero poder compartilhar uma transmissão ao vivo da plataforma para divulgar/convidar outras pessoas a assistirem a transmissão ao vivo.|A transmissão estar ao vivo dentro da plataforma, assim podendo compartilhar a mesma para outras pessoas, em suas redes sociais.|
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
 ## RF15 - Vincular Conta de Usuário a Outros Serviços
 
 ### Atributos

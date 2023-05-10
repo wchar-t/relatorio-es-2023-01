@@ -22,6 +22,7 @@ TODO
 ## Iteração 2:
 
 - [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [ ] RF10 - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
 
 # Casos de uso e User stories
 
@@ -463,6 +464,55 @@ Suporte|O usuário clica no suporte|
 | User Story | Critério de Avaliação |
 | --- | --- |
 | Como usuário, quero compartilhar com outras pessoas minhas atividades como jogar, programar ou apenas conversar. | Usuário deve estar logado. |
+
+![RF](https://placehold.co/600x400/EEE/31343C)
+
+
+##  RF10 - Salvar Transmissão
+
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Salvar Transmissão|
+|Resumo|O usuário vai ter a opção de salvar a transmissão apos encerrado|
+|Ator principal|Dono da transmissão|
+|Ator secundário|Não possui|
+|Pré-condição|Somente após encerrado a transmissão|
+|Pós-condição|Não possui|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| O usuário acessa o página com as transmissões |
+|Passo 2| O usuário seleciona a transmissão |
+|Passo 3| O usuário clica no botão de salvar transmissão |
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1| Usuário finaliza transmissão |
+|Passo 2| Usuário clica no botão de salvar transmissão |
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|||||
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Salvar transmissão|Define/Altera um filtro para data|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder salvar minhas transmissões em meu dispositivo. Isso me permite editar e compartilhar em outras plataformas.| O usuário tem acesso às transmissões passadas e pode salvá-las. |
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 

@@ -859,6 +859,66 @@ Prototipo
 
 ![RF](https://placehold.co/600x400/EEE/31343C)
 
+
+## RF20 - Bloquear Usuário
+###  Atributos
+
+|Item|Descrição|
+| -- | - |
+|Caso de Uso|Bloquear Usuário|
+|Resumo|Permite que um usuário bloqueie o perfil de outro usuário|
+|Ator principal|Usuário final cadastrado|
+|Ator secundário|Usuário cujo perfil será bloqueado|
+|Pré-condição|O usuário deve ser cadastrado, ter o aplicativo instalado e estar logado na sua conta|
+|Pós-condição|O perfil do usuário bloqueado não estará mais visível para o usuário que realizou o bloqueio|
+
+###  Fluxo principal
+
+|Passos|Descrição|
+| --   | - |
+|Passo 1|O usuário acessa o perfil do usuário que deseja bloquear.|
+|Passo 2|O usuário clica no botão "Bloquear".|
+|Passo 3|O sistema exibe uma mensagem de confirmação perguntando se o usuário realmente deseja bloquear o perfil.|
+|Passo 4|O usuário confirma a ação.|
+|Passo 5|O sistema realiza o bloqueio do perfil do usuário e exibe uma mensagem de confirmação.|
+|Passo 6|O Sistema redireciona para a "Home".|
+
+
+
+###  Fluxo alternativo
+
+|Passos|Descrição|
+| -- | - |
+|Passo 1|No Passo 4, se o usuário cancelar a ação de bloqueio, o fluxo retorna para o Passo 1.|
+|Passo 2|No Passo 5, se ocorrer algum erro durante a atualização da lista de usuários bloqueados, o aplicativo exibe uma mensagem de erro e o fluxo retorna para o Passo 1.|
+
+###  Campos
+
+|Campo|Obrigatório|Editável|Formato|
+| - | - | -- | - |
+|Usuário|Sim|Não|Botão|
+|Bloquear|Sim|Não|Botão|
+|Confirmar|Sim|Não|Botão|
+|Cancelar|Sim|Não|Botão|
+
+
+
+###  Opções de usuário
+
+|Opção|Descrição|
+| - | - |
+|Bloquear|Permite bloquear o perfil de outro usuário.|
+|Confirmar|Confirma a ação de bloqueio.|
+|Cancelar|Cancela a ação de bloqueio.|
+
+###  User Story
+
+|User Story|Critério de Avaliação|
+| -- | --- |
+|Como um usuário, eu quero poder bloquear o perfil de outro usuário para não visualizar suas publicações, a fim de melhorar minha experiência na plataforma.|Certificar que o perfil do usuário bloqueado não está mais visível para o usuário que realizou o bloqueio.|
+
+
+
 ## **RF21 - Definir qualidade do vídeo**
 
 #### Autor: @afonsodglan - Afonso Dglan Cirqueira Rodrigues.

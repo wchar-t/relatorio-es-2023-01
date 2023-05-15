@@ -81,8 +81,6 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 |    --    |         ---         |
 |Como um usário, eu quero fazer registron, para que eu possa fazer login e ter a experiência completa da plataforma|Certificar que todos os dados são validados e registrados|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF02 - Fazer Login
 
 ### Atributos
@@ -130,8 +128,6 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Como um usário, eu quero fazer login, para que eu possa ter a experiência completa da plataforma|Certificar que todos os dados são validados e o usuário consiga fazer login ao fim|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF03 - Editar Configurações de Perfil
 ###  Atributos
@@ -185,8 +181,6 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 | -- | --- |
 |Como um usuário, eu quero poder personalizar meu perfil com minha imagem de perfil, nome e outras informações pessoais, para que eu possa me identificar e me conectar com outros usuários. Isso me permite ter uma experiência personalizada e segura no aplicativo de livestreaming.| O usuário pode personalizar completamente seu perfil de acordo com suas preferências e atualizá-lo conforme necessário.|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF04 - Alterar Senha do Usuário
 
 ### Atributos
@@ -237,8 +231,6 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Como um usuário, eu quero poder alterar minha senha para garantir a segurança da minha conta.|Os novos dados de senha devem ser validados e salvos, o usuário deve conseguir utilizar sua nova senha para login, com a antiga se tornando incapaz do mesmo.|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 
 ## RF05 - Recuperar Senha do Usuário
@@ -300,8 +292,6 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 |User Story|Critério de Avaliação|
 | -- | --- |
 |Como um usuário, eu quero poder recuperar minha senha para acessar minha conta caso eu a esqueça ou perca, a fim de não perder o acesso aos meus dados e funcionalidades da plataforma.| Certificar que todos os dados são validados e senha recuperada e o usuário consiga fazer login ao fim.|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF06 - Solicitar Suporte
 
@@ -367,9 +357,6 @@ Suporte|O usuário clica no suporte|
 |    --    |         ---         |
 |Como um usuário final cadastrado no aplicativo, eu quero poder solicitar suporte quando tiver dúvidas ou problemas, para obter assistência adequada|Eu devo ter o aplicativo instalado em meu dispositivo móvel e estar logado com uma conta válida|
 
-|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF07 - Visualização da Politica de Privacidade da Plataforma
 ###  Atributos
@@ -422,8 +409,6 @@ Suporte|O usuário clica no suporte|
 | -- | --- |
 |Como um usuário, eu quero poder ter acesso aos termo de politica e privacidade, para ter ciência dos dados que fornecerei para a plataforma e os riscos de exibir essas informações.| As políticas de privacidade devem ser exibidas corretamente e de forma clara para o usuário e devem ser atualizadas para a jurisdição do usuário.|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF08 - Transmitir Tela Ao Vivo
 
 ### Atributos
@@ -472,8 +457,6 @@ Suporte|O usuário clica no suporte|
 | --- | --- |
 | Como usuário, quero compartilhar com outras pessoas minhas atividades como jogar, programar ou apenas conversar. | Usuário deve estar logado. |
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 
 ##  RF10 - Salvar Transmissão
 
@@ -521,8 +504,6 @@ Suporte|O usuário clica no suporte|
 | -- | --- |
 |Como um usuário, eu quero poder salvar minhas transmissões em meu dispositivo. Isso me permite editar e compartilhar em outras plataformas.| O usuário tem acesso às transmissões passadas e pode salvá-las. |
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF11 - Seguir Usuário
 
 ### Atributos
@@ -569,8 +550,6 @@ Suporte|O usuário clica no suporte|
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Como usuário, quero poder ser capaz de seguir quantos outros usuários eu quiser para que com isso eu possa acompanhar todas as suas atividades, incluindo por exemplo atualizações, novas transmissões ao vivo e novas gravações de transmissões feitas pelo(s) usuário(s) que sigo|O usuário pode seguir e deixar de seguir quantos usuários quiser e quando quiser, podendo administrar dessa forma o conteúdo que será capaz de acompanhar e que lhe será sugerido|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 
 ##  RF12 - Filtrar Conteúdo
@@ -627,8 +606,6 @@ Suporte|O usuário clica no suporte|
 |User Story|Critério de Avaliação|
 | -- | --- |
 |Como um usuário, eu quero poder escolher filtros para os conteúdos que eu buscar dentro da plataforma. Isso me permite ter uma experiência personalizada e facilitada na busca por conteúdos quem me agradem.| O usuário tem acesso a todos os filtros de busca e eles são aplicáveis para toda busca realizada, gerando um resultado ou mensagem padrão do sistema.|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 
 ## **RF13 - Banir Usuário Do Chat**
@@ -747,8 +724,6 @@ Prototipo
 |    --    |         ---         |
 |Como usuário eu quero poder compartilhar uma transmissão ao vivo da plataforma para divulgar/convidar outras pessoas a assistirem a transmissão ao vivo.|A transmissão estar ao vivo dentro da plataforma, assim podendo compartilhar a mesma para outras pessoas, em suas redes sociais.|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF15 - Vincular Conta de Usuário a Outros Serviços
 
 ### Atributos
@@ -796,8 +771,6 @@ Prototipo
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Eu como usuário quero vincular minha conta na plataforma com minha conta em outro serviço, assim eu posso utilizar minhas preferências e também terei mais segurança na minha conta|Todas as opções de configurações de perfil devem estar funcionando perfeitamente, assim como o serviço ao qual o usuário deseja vincular sua conta. O usuário poderá vincular sua conta na página de configuração de perfil ao serviço que estiver disponível e desejar |
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF16 - Buscar Termo na Plataforma
 #### Autor: @HeloCris - Helorrayne Cristine
@@ -853,12 +826,8 @@ Buscar|O usuário clica no ícone de pesquisa|
 
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
-|Como um usuário da plataforma, eu gostaria de poder buscar por termos na plataforma para encontrar informações relevantes de maneira rápida e fácil. Eu quero ser capaz de digitar o termo que desejo buscar na barra de busca e visualizar os resultados da busca na tela. Se não houver dados correspondentes ao termo que busco, eu quero receber uma mensagem informando que não foram encontrados resultados para minha busca.|1-A barra de busca deve estar visível e facilmente acessível para o usuário. 2-O sistema de busca deve ser capaz de buscar por termos em todos os dados relevantes da plataforma. 3-Os resultados da busca devem ser apresentados de forma clara e organizada para o usuário. 4-O sistema de busca deve retornar resultados relevantes e precisos para os termos buscados. 5- Se não houver dados correspondentes ao termo buscado, o sistema de busca deve retornar uma mensagem clara informando que não foram encontrados resultados para a busca. 6-A busca deve ser realizada de forma eficiente e rápida, sem causar atrasos ou interrupções no uso da plataforma pelo usuário.
+|Como um usuário da plataforma, eu gostaria de poder buscar por termos na plataforma para encontrar informações relevantes de maneira rápida e fácil. Eu quero ser capaz de digitar o termo que desejo buscar na barra de busca e visualizar os resultados da busca na tela. Se não houver dados correspondentes ao termo que busco, eu quero receber uma mensagem informando que não foram encontrados resultados para minha busca.|1-A barra de busca deve estar visível e facilmente acessível para o usuário. 2-O sistema de busca deve ser capaz de buscar por termos em todos os dados relevantes da plataforma. 3-Os resultados da busca devem ser apresentados de forma clara e organizada para o usuário. 4-O sistema de busca deve retornar resultados relevantes e precisos para os termos buscados. 5- Se não houver dados correspondentes ao termo buscado, o sistema de busca deve retornar uma mensagem clara informando que não foram encontrados resultados para a busca. 6-A busca deve ser realizada de forma eficiente e rápida, sem causar atrasos ou interrupções no uso da plataforma pelo usuário.|
 
-
-
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 ## RF17 - Receber pontos ao assistir transmissões ao vivo
 
@@ -912,8 +881,6 @@ Buscar|O usuário clica no ícone de pesquisa|
 |    --    |         ---         |
 |Eu como usuário quero assistir uma transmissão ao vivo e receber pontos que posso utilizar para resgatar prêmios ou benefícios na plataforma|Todas os pontos devem ser contabilizados corretamente (quando elegível) ao assistir a transmissão e devem poder serem resgatados conforme desejar alguma das opções de resgate disponíveis|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
 ## RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo
 
 ### Atributos
@@ -966,7 +933,6 @@ Buscar|O usuário clica no ícone de pesquisa|
 |Eu como usuário quero assistir uma transmissão ao vivo e poder ser sorteado para ganhar prêmios ou benefícios na plataforma ou outras, como jogos, sites, entre outros|
 Todos os brindes devem ser entregues corretamente ao usuário sorteado durante a transmissão especial|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
 ## RF19 - Denunciar Transmissão
 
 ### Atributos
@@ -1023,8 +989,6 @@ Todos os brindes devem ser entregues corretamente ao usuário sorteado durante a
 |User Story|Critério de Avaliação|
 |    --    |         ---         |
 |Como um usuário da plataforma de streaming, quero ter a opção de denunciar transmissões que violem as políticas da plataforma, para que os moderadores possam tomar as medidas apropriadas e manter a comunidade segura e saudável.|O formulário de denúncia deve ser facilmente acessível e visível na plataforma de streaming, o formulário deve incluir campos claros e relevantes para o tipo de denúncia que o usuário deseja fazer, a plataforma deve levar as denúncias a sério e tomar medidas apropriadas em tempo hábil, caso sejam confirmadas violações das políticas, a plataforma de streaming deve monitorar e avaliar continuamente as denúncias para garantir que as políticas sejam atualizadas e eficazes na proteção da comunidade.|
-
-![RF](https://placehold.co/600x400/EEE/31343C)
 
 
 ## RF20 - Bloquear Usuário
@@ -1194,8 +1158,3 @@ Agora iremos escrever uma história de usuário para uma persona.
 |    --    |         ---         |
 |Como usuário, quero poder ser capaz de ser notificado sobre as atividades dos usuários que sigo na plataforma de streaming. Assim como, também, desejo ser capaz de desativar as notificações no momento em que eu quiser|O usuário pode ativar e desativar as notificações de um usuário que segue no momento em que quiser|
 
-![RF](https://placehold.co/600x400/EEE/31343C)
-
-
-
-Prototipo

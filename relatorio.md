@@ -6,30 +6,30 @@ Plataforma de streaming de vídeo focada em jogos e entretenimento ao vivo. O si
 
 ## Iteração 1:
 
-- [ ] RF01 - Cadastrar Usuário [João](https://github.com/wchar-t)
-- [ ] RF03 - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
-- [ ] RF04 - Alterar Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
-- [ ] RF05 - Recuperar Senha do Usuário [Antonio André](https://github.com/andrebarceloschagas)
-- [ ] RF06 - Solicitar Suporte [Helorrayne Cristine](https://github.com/HeloCris)
-- [ ] RF07 - Visualizar Politica de Privacidade da Plataforma [Victor Campelo](https://github.com/victorcampelo14)
-- [ ] RF08 - Transmitir Tela Ao Vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
-- [ ] RF11 - Seguir Usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
-- [ ] RF13 - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
-- [ ] RF15 - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
-- [ ] RF17 - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
+- [x] [RF01](#rf01---cadastrar-usuário) - Cadastrar Usuário [João](https://github.com/wchar-t)
+- [x] [RF03](#rf03---editar-configurações-de-perfil) - Editar Configurações de Perfil [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [x] [RF04](#rf04---alterar-senha-do-usuário) - Alterar Senha do Usuário [Luiz Henrique Campos](https://github.com/lizenriq)
+- [x] [RF05](#rf05---recuperar-senha-do-usuário) - Recuperar Senha do Usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [x] [RF06](#rf06---solicitar-suporte) - Solicitar Suporte [Helorrayne Cristine](https://github.com/HeloCris)
+- [x] [RF07](#rf07---visualização-da-politica-de-privacidade-da-plataforma) - Visualizar Politica de Privacidade da Plataforma [Victor Campelo](https://github.com/victorcampelo14)
+- [x] [RF08](#rf08---transmitir-tela-ao-vivo) - Transmitir Tela Ao Vivo [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [x] [RF11](#rf11---seguir-usuário) - Seguir Usuário [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
+- [x] [RF13](#rf13---banir-usuário-do-chat) - Banir Usuário Do Chat [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
+- [x] [RF15](#rf15---vincular-conta-de-usuário-a-outros-serviços) - Vincular Conta de Usuário a Outros Serviços [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [x] [RF17](#rf17---receber-pontos-ao-assistir-transmissões-ao-vivo) - Receber Pontos ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
 
 ## Iteração 2:
 
-- [ ] RF02 - Fazer Login [João](https://github.com/wchar-t)
-- [ ] RF12 - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
-- [ ] RF10 - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
-- [ ] RF14 - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
-- [ ] RF16 - Buscar Termo na Plataforma [Helorrayne Cristine](https://github.com/HeloCris)
-- [ ] RF18 - Sortear brindes especiais ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
-- [ ] RF19 - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
-- [ ] RF20 - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
-- [ ] RF21 - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
-- [ ] RF22 - Ativar notificações de usuário que segue [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
+- [x] [RF02](#rf02---fazer-login) - Fazer Login [João](https://github.com/wchar-t)
+- [x] [RF12](#rf12---filtrar-conteúdo) - Filtrar Conteúdo [Emanuel Catão Montenegro](https://github.com/emanuelcatao)
+- [x] [RF10](#rf10---salvar-transmissão) - Salvar Transmissão [Luis Felipe](https://github.com/Luis-Felipe-N)
+- [x] [RF14](#rf14---compartilhar-perfil-da-plataforma) - Compartilhar Transmissão ao Vivo [Lucas José de Sousa Gomes](https://github.com/yamatosz)
+- [x] [RF16](#rf16---buscar-termo-na-plataforma) - Buscar Termo na Plataforma [Helorrayne Cristine](https://github.com/HeloCris)
+- [x] [RF18](#rf18---sortear-brindes-especiais-ao-assistir-transmissões-ao-vivo) - Sortear brindes especiais ao Assistir Transmissões Ao Vivo [Anderson Freitas](https://github.com/freitasanderson)
+- [x] [RF19](#rf19---denunciar-transmissão) - Denunciar Transmissão [Luiz Henrique Campos](https://github.com/lizenriq)
+- [x] [RF20](#rf20---bloquear-usuário) - Bloquear Usuário [Antonio André](https://github.com/andrebarceloschagas)
+- [x] [RF21](#rf21---definir-qualidade-do-vídeo) - Definir qualidade do vídeo [Afonso Dglan Cirqueira Rodrigues](https://github.com/afonsodglan)
+- [x] [RF22](#rf22---ativar-notificações-de-usuário-que-segue) - Ativar notificações de usuário que segue [Ruan Carlos Ribeiro de Sena Mangueira](https://github.com/okkvlt)
 
 # Casos de uso e User stories
 

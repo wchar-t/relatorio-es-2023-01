@@ -679,10 +679,11 @@ Suporte|O usuário clica no suporte|
 Agora iremos escrever uma história de usuário para uma persona.
 
 **Persona um, usuário comum.**
+| User Story| Critério de aceitação| 
+|---------- | -------------------- |
+| Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa".| Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
 
-| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa". | Enquanto "usuário admistrador" preciso ter controle sobre o conteúdo que é inserido no chat da própria live | Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
+![RF](https://raw.githubusercontent.com/AfonsoDglan/imagens/main/banir.png)
 
 Prototipo
 
@@ -1121,11 +1122,13 @@ Agora iremos escrever uma história de usuário para uma persona.
 
 **Persona um, usuário comum.**
 
-| Epic                                                                                                                                                                                                               | User Story                                                                                                                                 | Critério de aceitação                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| Eu enquanto "usuário" quero "poder definir a qualidade do vídeo da live que estou assistindo." para "ter mais controle sobre a quantidade de consumo da minha banda de internet". | Enquanto "usuário" preciso ter controle sobre a quantidade de consumo da banda de internet que está sendo consumida para assistir a live ou para assistir a live com uma alta definição | Certifique-se que o usuário é capaz de **Definir a qualidade do vídeo da live.** |
+| User Story | Critério de aceitação |
+| ---------- | --------------------- |
+| Enquanto "usuário" preciso ter controle sobre a quantidade de consumo da banda de internet que está sendo consumida para assistir a live ou para assistir a live com uma alta definição | Certifique-se que o usuário é capaz de **Definir a qualidade do vídeo da live.**|
 
 
+
+![RF](https://raw.githubusercontent.com/AfonsoDglan/imagens/main/qualidade.png)
 ## RF22 - Ativar notificações de usuário que segue
 
 ### Atributos

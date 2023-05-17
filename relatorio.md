@@ -683,10 +683,6 @@ Agora iremos escrever uma história de usuário para uma persona.
 |---------- | -------------------- |
 | Eu enquanto "usuário admistrador" quero "poder bloquear contas de usuário que violaram as regras da plataforma por meio de mensagens ofensivas." para "ter mais segurança e uma experiências mais completa".| Certifique-se que o usuário é capaz de **Bloquear usuário do chat.** |
 
-![RF](https://raw.githubusercontent.com/AfonsoDglan/imagens/main/banir.png)
-
-Prototipo
-
 ## RF14 - Compartilhar Perfil da Plataforma
 
 ### Atributos
